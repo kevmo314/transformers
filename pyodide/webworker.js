@@ -8,7 +8,7 @@ self.onmessage = (e) => {
 };
 
 languagePluginLoader.then(() => {
-  self.pyodide.loadPackage([]).then(() => {
+  self.pyodide.loadPackage(["numpy"]).then(() => {
     let activeId = undefined;
     self.receive_stdout = (s) => {
       self.postMessage({ id: activeId, stdout: s });
