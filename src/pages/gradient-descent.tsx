@@ -11,7 +11,7 @@ import {
   MarkSeries,
 } from "react-vis";
 
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import SEO from "../components/seo";
 import MathJax from "../components/MathJax";
 import "react-vis/dist/style.css";

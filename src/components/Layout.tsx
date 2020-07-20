@@ -1,9 +1,9 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import Header from "./header";
+import Header from "./Header";
 import "./layout.css";
 
-const Layout = ({ children }: React.PropsWithChildren<{}>) => {
+export default ({ children }: React.PropsWithChildren<{}>) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -35,5 +35,3 @@ const Layout = ({ children }: React.PropsWithChildren<{}>) => {
     </>
   );
 };
-
-export default Layout;
