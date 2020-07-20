@@ -1,7 +1,7 @@
-const MonacoWebpackPlugin = require(`monaco-editor-webpack-plugin`);
+import MonacoWebpackPlugin from `monaco-editor-webpack-plugin`;
 
-exports.onCreateWebpackConfig = ({ actions }) => {
+export function onCreateWebpackConfig({ actions }) {
   actions.setWebpackConfig({
     plugins: [new MonacoWebpackPlugin()],
   });
-};
+}
