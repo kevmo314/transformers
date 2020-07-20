@@ -17,6 +17,7 @@ import MathJax from "../components/MathJax";
 import "react-vis/dist/style.css";
 import styled from "@emotion/styled";
 import Python from "../components/Python";
+import { Unknown, Success, Fail, Pending } from "../components/Icons";
 
 const Grid = styled.div`
   display: grid;
@@ -210,6 +211,31 @@ function OneDimensionPython() {
         change the name of the functions, however, as the checker relies on
         those names to grade the code.
       </p>
+      <p>A number of icons show up below the editor, one for each test case.</p>
+      <div
+        style={{ display: "flex", alignItems: "center", marginBottom: "4px" }}
+      >
+        <Unknown />
+        &nbsp;&nbsp; This test case hasn't been evaluated yet.
+      </div>
+      <div
+        style={{ display: "flex", alignItems: "center", marginBottom: "4px" }}
+      >
+        <Pending />
+        &nbsp;&nbsp; This test case is currently running.
+      </div>
+      <div
+        style={{ display: "flex", alignItems: "center", marginBottom: "4px" }}
+      >
+        <Success />
+        &nbsp;&nbsp; This test case passed.
+      </div>
+      <div
+        style={{ display: "flex", alignItems: "center", marginBottom: "24px" }}
+      >
+        <Fail />
+        &nbsp;&nbsp; This test case failed. Click it to find out why.
+      </div>
       <Python
         hiddenContent=""
         initialContent={`
