@@ -13,8 +13,8 @@ const IndexPage = () => (
       <strong>Journey to Transformers</strong> explains all the concepts that
       build up to the state-of-the-art transformer neural network. No magic
       abstractions or libraries, we'll cover everything from the ground up. This
-      course is not intended to be a general machine learning course, however.
-      It is solely focused on neural networks and their construction.
+      course is not intended to be a general machine learning course. It is
+      solely focused on neural networks and their construction.
     </p>
     <p>
       A couple prerequisites are necessary, however. You'll need to know some
