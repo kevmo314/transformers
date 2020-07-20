@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{MhVE:function(e,n,t){"use strict";t.r(n);t("q1tI");var o=t("soUV"),i=t("vrFN"),s=t("qKvR");n.default=function(){return Object(s.b)(o.a,null,Object(s.b)(i.a,{title:"Regressions"}),Object(s.b)("h1",null,"🚧 To be continued..."),Object(s.b)("p",null,"This page hasn't been finished yet. Come back soon or"," ",Object(s.b)("a",{href:"https://forms.gle/Xpio3Qm61PhfLvgHA"},"sign up for an email notification"),"."))}}}]);
+//# sourceMappingURL=component---src-pages-regressions-tsx-d1bd4ad3b0da7552d045.js.map
