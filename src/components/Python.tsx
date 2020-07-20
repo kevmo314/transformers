@@ -224,6 +224,30 @@ export default ({
     return Promise.all(promises);
   }
 
+  function setContent(content: string) {
+    if (!editor) {
+      return;
+    }
+    const existingContent = editor
+      .getModel()
+      .getValue()
+      .trim()
+      .split("\n")
+      .map((line) => `# ${line}`)
+      .join("\n");
+
+    const newContent = `${content}\n\n${existingContent}`;
+    editor.getModel().setValue(newContent);
+    setResults((results) =>
+      results.map((result) => ({
+        ...result,
+        state: "unknown",
+        received: undefined,
+      }))
+    );
+    interrupt();
+  }
+
   const [editor, setEditor] = React.useState<editor.IStandaloneCodeEditor>();
 
   React.useEffect(() => {
@@ -251,7 +275,7 @@ export default ({
   }, [monaco, initialContent]);
 
   return (
-    <div>
+    <p>
       <div ref={container} style={{ height: "400px" }}></div>
       <Tabs>
         <ResultSummary>
@@ -277,58 +301,10 @@ export default ({
             );
           })}
         </ResultSummary>
-        <Tab
-          role="button"
-          onClick={() => {
-            if (editor) {
-              const existingContent = editor
-                .getModel()
-                .getValue()
-                .trim()
-                .split("\n")
-                .map((line) => `# ${line}`)
-                .join("\n");
-
-              const newContent = `${solution}\n\n${existingContent}`;
-              editor.getModel().setValue(newContent);
-              setResults((results) =>
-                results.map((result) => ({
-                  ...result,
-                  state: "unknown",
-                  received: undefined,
-                }))
-              );
-              interrupt();
-            }
-          }}
-        >
+        <Tab role="button" onClick={() => setContent(solution)}>
           Show Solution
         </Tab>
-        <Tab
-          role="button"
-          onClick={() => {
-            if (editor) {
-              const existingContent = editor
-                .getModel()
-                .getValue()
-                .trim()
-                .split("\n")
-                .map((line) => `# ${line}`)
-                .join("\n");
-
-              const newContent = `${initialContent}\n\n${existingContent}`;
-              editor.getModel().setValue(newContent);
-              setResults((results) =>
-                results.map((result) => ({
-                  ...result,
-                  state: "unknown",
-                  received: undefined,
-                }))
-              );
-              interrupt();
-            }
-          }}
-        >
+        <Tab role="button" onClick={() => setContent(initialContent)}>
           Reset
         </Tab>
         <Tab
@@ -345,6 +321,6 @@ export default ({
       {activeResultIndex !== undefined && (
         <DetailedResult result={results[activeResultIndex]} />
       )}
-    </div>
+    </p>
   );
 };
