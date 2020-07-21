@@ -109,7 +109,7 @@ function OneDimension() {
           </li>
         </ol>
         <p>
-          For our one-dimensional function, the gradient{" "}
+          For a one-dimensional function, the gradient{" "}
           <MathJax tex="\nabla f(x)" /> is equal to the derivative of the
           function, <MathJax tex="\nabla f(x) = 2x + 2" />.
         </p>
