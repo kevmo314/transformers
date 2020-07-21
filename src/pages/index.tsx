@@ -14,7 +14,8 @@ const IndexPage = () => (
       build up to the state-of-the-art transformer neural network. No magic
       abstractions or libraries, we'll cover everything from the ground up. This
       course is not intended to be a general machine learning course. It is
-      solely focused on neural networks and their construction.
+      solely focused on neural networks and their construction and is intended
+      is be <em>just enough</em> content to build a complex neural network.
     </p>
     <p>
       A couple prerequisites are necessary, however. You'll need to know some
@@ -50,6 +51,13 @@ const IndexPage = () => (
         <li>Attention</li>
         <li>Transformers</li>
         <li>Encoders and Decoders</li>
+        <li>Problem Set</li>
+      </ol>
+      <hr />
+      <h2>Problems and Optimizations</h2>
+      <ol>
+        <li>Improving Gradient Descent</li>
+        <li>Improving Backpropagation</li>
         <li>Problem Set</li>
       </ol>
       <h2>Beyond Transformers</h2>
