@@ -22,11 +22,13 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-icons": "^3.10.0",
+    "uuid": "^8.3.0",
     "uuidv4": "^6.2.1"
   },
   "devDependencies": {
     "@types/d3": "^5.7.2",
     "@types/react-helmet": "^6.0.0",
+    "@types/uuid": "^8.0.0",
     "babel-plugin-inline-import": "^3.0.0",
     "babel-preset-gatsby": "^0.5.4",
     "prettier": "2.0.5"
