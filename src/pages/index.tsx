@@ -23,8 +23,9 @@ const IndexPage = () => (
       A couple prerequisites are necessary, however. You'll need to know some
       basic <strong>linear algebra</strong> (think matrix multiplication),{" "}
       <strong>calculus</strong> (partial derivatives and computing them), and
-      some basic <strong>python</strong>. Later chapters will use numpy, but in
-      earlier chapters we will build everything from scratch.
+      some basic <strong>python</strong>. Later chapters will use{" "}
+      <code>numpy</code>, but in earlier chapters we will build everything from
+      scratch.
     </p>
     <p>
       In addition to problems included in each of the chapters, each section
