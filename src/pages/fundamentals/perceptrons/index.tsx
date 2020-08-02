@@ -3,8 +3,8 @@ import Layout from "../../../components/Layout";
 import SEO from "../../../components/seo";
 import MathJax from "../../../components/MathJax";
 import Python from "../../../components/Python";
-import problems from "./problems";
-import solutions from "./solutions";
+import problems from "../../../python/fundamentals/perceptrons/problems";
+import solutions from "../../../python/fundamentals/perceptrons/solutions";
 import { Link } from "gatsby";
 
 export default () => (

@@ -4,8 +4,8 @@ import Layout from "../../../components/Layout";
 import SEO from "../../../components/seo";
 import MathJax from "../../../components/MathJax";
 import Python from "../../../components/Python";
-import problems from "./problems";
-import solutions from "./solutions";
+import problems from "../../../python/fundamentals/problem-set/problems";
+import solutions from "../../../python/fundamentals/problem-set/solutions";
 import { Link } from "gatsby";
 
 export default () => (

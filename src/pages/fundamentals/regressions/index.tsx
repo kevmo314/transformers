@@ -3,8 +3,8 @@ import React from "react";
 import Layout from "../../../components/Layout";
 import SEO from "../../../components/seo";
 import MathJax from "../../../components/MathJax";
-import problems from "./problems/";
-import solutions from "./solutions/";
+import problems from "../../../python/fundamentals/regressions/problems";
+import solutions from "../../../python/fundamentals/regressions/solutions";
 import Python from "../../../components/Python";
 import { Link } from "gatsby";
 

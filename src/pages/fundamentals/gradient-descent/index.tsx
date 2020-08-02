@@ -8,8 +8,8 @@ import Layout from "../../../components/Layout";
 import MathJax from "../../../components/MathJax";
 import Python from "../../../components/Python";
 import SEO from "../../../components/seo";
-import problems from "./problems";
-import solutions from "./solutions";
+import problems from "../../../python/fundamentals/gradient-descent/problems";
+import solutions from "../../../python/fundamentals/gradient-descent/solutions";
 
 const Grid = styled.div`
   display: grid;
