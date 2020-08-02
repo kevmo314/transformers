@@ -7,7 +7,7 @@ import { Fail, Pending, Success, Unknown } from "../../../components/Icons";
 import Layout from "../../../components/Layout";
 import MathJax from "../../../components/MathJax";
 import Python from "../../../components/Python";
-import SEO from "../../../components/seo";
+import SEO from "../../../components/SEO";
 import problems from "../../../python/fundamentals/gradient-descent/problems";
 import solutions from "../../../python/fundamentals/gradient-descent/solutions";
 

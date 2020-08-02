@@ -1,7 +1,7 @@
 import React from "react";
 
 import Layout from "../../../components/Layout";
-import SEO from "../../../components/seo";
+import SEO from "../../../components/SEO";
 import MathJax from "../../../components/MathJax";
 import problems from "../../../python/fundamentals/regressions/problems";
 import solutions from "../../../python/fundamentals/regressions/solutions";
