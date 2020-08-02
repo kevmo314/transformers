@@ -3371,7 +3371,7 @@ else if (typeof process === 'object') {
     _isLinux = (process.platform === 'linux');
     _locale = LANGUAGE_DEFAULT;
     _language = LANGUAGE_DEFAULT;
-    var rawNlsConfig = {}['VSCODE_NLS_CONFIG'];
+    var rawNlsConfig = ({})['VSCODE_NLS_CONFIG'];
     if (rawNlsConfig) {
         try {
             var nlsConfig = JSON.parse(rawNlsConfig);
