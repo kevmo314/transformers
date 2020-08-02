@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[18],{"/XWa":function(e,n,t){"use strict";t.r(n);t("q1tI");var o=t("soUV"),b=t("1Yd/"),i=t("qKvR");n.default=()=>Object(i.b)(o.a,null,Object(i.b)(b.a,{title:"To be continued..."}),Object(i.b)("h1",null,"🚧 To be continued..."),Object(i.b)("p",null,"This page hasn't been finished yet. Come back soon or"," ",Object(i.b)("a",{href:"https://forms.gle/Xpio3Qm61PhfLvgHA"},"sign up for an email notification"),"."))}}]);
+//# sourceMappingURL=component---src-pages-tba-tsx-bf528fe67f3e18ceb584.js.map
