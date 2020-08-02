@@ -5,11 +5,12 @@ import { SVG } from "mathjax-full/js/output/svg";
 import { liteAdaptor } from "mathjax-full/js/adaptors/liteAdaptor";
 import { RegisterHTMLHandler } from "mathjax-full/js/handlers/html";
 import { OptionList } from "mathjax-full/js/util/Options";
+import { AllPackages } from "mathjax-full/js/input/tex/AllPackages";
 
 const adaptor = liteAdaptor();
 RegisterHTMLHandler(adaptor);
 
-const tex = new TeX({ packages: ["base", "ams", "color"] });
+const tex = new TeX({ packages: AllPackages });
 const svg = new SVG({ fontCache: "local" });
 const html = mathjax.document("", { InputJax: tex, OutputJax: svg });
 

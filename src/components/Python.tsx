@@ -117,7 +117,7 @@ export default ({
   evaluations,
 }: {
   initialContent: string;
-  hiddenContent: string;
+  hiddenContent?: string;
   solution: string;
   evaluations: Evaluation[];
 }) => {
@@ -169,7 +169,7 @@ export default ({
     const promises = evaluations.map(async (evaluation) => {
       try {
         const output = await run(
-          content + "\n\n" + hiddenContent + "\n\n" + evaluation.eval,
+          content + "\n\n" + (hiddenContent || "") + "\n\n" + evaluation.eval,
           (s) => {
             setResults((results) =>
               results.map((result) => {
@@ -275,7 +275,7 @@ export default ({
   }, [monaco, initialContent]);
 
   return (
-    <p>
+    <div>
       <div ref={container} style={{ height: "400px" }}></div>
       <Tabs>
         <ResultSummary>
@@ -321,6 +321,6 @@ export default ({
       {activeResultIndex !== undefined && (
         <DetailedResult result={results[activeResultIndex]} />
       )}
-    </p>
+    </div>
   );
 };
