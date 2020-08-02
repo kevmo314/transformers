@@ -479,11 +479,3 @@ export default function ({ data, path }: PageProps<{}>) {
     </Layout>
   );
 }
-
-export const query = graphql`
-  {
-    site {
-      buildTime(formatString: "YYYY-MM-DD hh:mm a z")
-    }
-  }
-`;
