@@ -5,7 +5,7 @@ import SEO from "../components/SEO";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Table of Contents" />
     <p>
       Hi, I'm Kevin. I've been looking for an end-to-end guide for how to build
       a transformer network from absolute scratch, but I haven't been able to
